@@ -1,6 +1,9 @@
 .btn {
-  display: inline-flex;
-  padding: 17px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 49px;
+  font-weight: 700;
 
   color: $color-default-white;
 
@@ -22,6 +25,6 @@
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }

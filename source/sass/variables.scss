@@ -30,6 +30,8 @@ $color-ghost-white:                 #f8f9fc;
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 $conic-red-to-blue:                 conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$conic-red-to-blue-tablet:          conic-gradient(from 155.49deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$conic-red-to-blue-phone:           conic-gradient(from 167.26deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 $red-to-blue-right:                 linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 $red-to-blue-bottom:                linear-gradient(180deg, #ed0233 0%, #003eb7 100%);
 $red-to-blue-bottom-low:            linear-gradient(180deg, #d10a42 0%, #00359f 100%);
