@@ -1,0 +1,33 @@
+.subscriptions {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 112px;
+  background-color: $color-ghost-white;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 287px;
+    height: 343px;
+    content: "";
+    background-image: image-set(url("../img/subscriptions/weights@1x.webp") 1x, url("../img/subscriptions/weights@2x.webp") 2x);
+
+    @include vp-1199 {
+      background-image: image-set(url("../img/subscriptions/weights-tablet@1x.webp") 1x, url("../img/subscriptions/weights-tablet@2x.webp") 2x);
+    }
+  }
+}
+
+.subscriptions__title {
+  margin: 0;
+  font-family: $ff-placeholder;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  margin-bottom: 8px;
+  text-align: center;
+}
