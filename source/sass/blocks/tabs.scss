@@ -1,5 +1,13 @@
 .tabs {
   max-width: 100%;
+
+  @include vp-1199 {
+    padding: 0 118px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
 }
 
 .tabs__controls {
@@ -22,8 +30,13 @@
     background-color: $color-line;
   }
 
+  @include vp-1199 {
+    margin-bottom: 48px;
+  }
+
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
+    margin-bottom: 39px;
   }
 }
 
@@ -47,17 +60,24 @@
 
   &:not(:last-child) {
     margin-right: 27px;
+
+    @include vp-1199 {
+      margin-right: 35px;
+    }
+
+    @include vp-767 {
+      margin-right: 31px;
+    }
   }
 
-  @media screen and (max-width: 1023px) {
-    margin: 0 10px;
-    padding: 15px;
+  @media screen and (max-width: 1199px) {
+    padding: 10px;
+    font-size: 18px;
   }
 
   @media screen and (max-width: 767px) {
-    margin: 10px 2% 0;
-    padding: 10px;
-    width: 45%;
+    padding: 10px 5px;
+    font-size: 16px;
   }
 
   &.is-active {
@@ -90,8 +110,12 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 
-  @media screen and (max-width: 767px) {
-    padding: 15px;
+  @include vp-1199 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @include vp-767 {
+    gap: 35px;
   }
 }
 
