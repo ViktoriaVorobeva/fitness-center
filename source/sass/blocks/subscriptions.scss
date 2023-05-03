@@ -16,19 +16,19 @@
 
   &::after {
     position: absolute;
-    bottom: 0;
+    bottom: -69px;
     right: 0;
     background-size: cover;
     background-repeat: no-repeat;
     width: 287px;
-    height: 343px;
+    height: 412px;
     content: "";
     background-image: image-set(url("../img/subscriptions/weights@1x.webp") 1x, url("../img/subscriptions/weights@2x.webp") 2x);
 
     @include vp-1199 {
       width: 346px;
-      height: 310px;
-      bottom: 5px;
+      height: 371px;
+      bottom: -56px;
       background-image: image-set(url("../img/subscriptions/weights-tablet@1x.webp") 1x, url("../img/subscriptions/weights-tablet@2x.webp") 2x);
     }
 
