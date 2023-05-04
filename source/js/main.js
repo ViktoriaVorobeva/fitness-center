@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {breakpointChecker} from './modules/breakpoints';
 import {initTabs} from './modules/tabs/init-tabs';
+import {initSlider} from './modules/slider';
 
 // ---------------------------------
 
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initTabs();
+    initSlider();
     const form = new Form();
     window.form = form;
     form.init();
