@@ -9,14 +9,13 @@
 
   @include vp-767 {
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 62px;
   }
 }
 
 .promo__wrapper {
   display: grid;
   grid-template-columns: 1fr 660px;
-  align-items: stretch;
 
   @include vp-1199 {
     grid-template-columns: 43% 57%;
@@ -36,6 +35,7 @@
   max-width: 500px;
   min-height: 500px;
   background-color: $color-torch-red;
+  align-self: stretch;
 
   @include vp-1199 {
     background-color: $color-torch-red;
@@ -201,6 +201,10 @@
     line-height: 12px;
     padding: 11px 48px;
   }
+}
+
+.promo__image-box {
+  align-self: stretch;
 }
 
 .promo__image {

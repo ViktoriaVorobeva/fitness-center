@@ -1,0 +1,144 @@
+.card__image-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include vp-1199 {
+    min-width: 268px;
+    aspect-ratio: 1/1.1;
+  }
+
+  @include vp-767 {
+    min-width: 226px;
+    aspect-ratio: 1/1.212;
+  }
+}
+
+.card h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color-default-white;
+  z-index: 2;
+
+  @include vp-1199 {
+    margin-bottom: -3px;
+    margin-left: 5px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+  }
+}
+
+.card p {
+  margin: 0;
+  display: none;
+  font-size: 16px;
+  line-height: 150%;
+  color: $color-spindle;
+  margin-bottom: 30px;
+
+  @include vp-1199 {
+    margin-bottom: 34px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+  }
+}
+
+.card__list {
+  display: none;
+  margin: 0;
+  margin-left: 18px;
+  padding: 0;
+  max-width: 143px;
+
+  @include vp-767 {
+    margin-left: 13px;
+  }
+}
+
+.card__item {
+  font-size: 14px;
+  line-height: 150%;
+  color: $color-default-white;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.card {
+  padding: 27px 49px 23px;
+  position: relative;
+  overflow: hidden;
+  height: 294px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+  background-position-y: center;
+  overflow: scroll;
+  max-width: 260px;
+
+  @include vp-1199 {
+    padding-bottom: 26px;
+    width: 100%;
+    height: auto;
+    min-height: 294px;
+    min-width: 268px;
+    max-width: none;
+    aspect-ratio: 1/1.1;
+  }
+
+  @include vp-767 {
+    min-height: 274px;
+    aspect-ratio: 1/1.212;
+    min-width: 226px;
+    padding: 27px 35px 23px;
+  }
+
+  &:hover,
+  &:focus-within {
+    overflow: scroll;
+    justify-content: flex-start;
+    background-color: $color-sapphire-dark;
+    padding: 50px 46px 40px 47px;
+
+    @include vp-1199 {
+      padding-left: 41px;
+      padding-top: 36px;
+      justify-content: center;
+    }
+
+    @include vp-767 {
+      padding: 34px 32px 33px 32px;
+    }
+
+    h3 {
+      @include vp-1199 {
+        margin-left: 0;
+      }
+    }
+
+    p {
+      display: block;
+    }
+
+    .card__list {
+      display: block;
+    }
+  }
+}
