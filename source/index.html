@@ -33,6 +33,8 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
+
+        <!-- Шапка -->
         <div class="header__container">
           <a class="header__logo logo" href="#">
             <svg class="header__logo-icon" width="122" height="44" aria-hidden="true" focusable="false">
@@ -43,6 +45,9 @@
           <a class="header__link" href="tel:88005555555">8-800-555-55-55
           </a>
         </div>
+
+
+        <!-- гланый экран -->
         <div class="header__wrapper main-screen">
           <ul class="main-screen__list">
             <li class="main-screen__item">Тренажёрный зал</li>
@@ -66,8 +71,12 @@
         </div>
       </div>
     </header>
+
+
     <main>
       <h1 class="visually-hidden">Фитнес центр</h1>
+
+      <!-- Тренажерный зал -->
       <section class="gym">
         <div class="container">
           <div class="gym__box">
@@ -92,7 +101,7 @@
             <div class="gym__video">
               <img class="gym__preview" width="364" height="228" src="img/gym/video.webp"
                 srcset="img/gym/video.webp 1x, img/gym/video@2x.webp 2x" alt="Постер видео про зал.">
-              <div id="player"></div>
+              <div class="gym__video-init" id="player"></div>
               <button class="gym__button" type="button">
                 <source media="(max-width: 1199px)"
                   srcset="img/gym/play-tablet.webp 1x, img/gym/play-tablet@2x.webp 2x">
@@ -103,6 +112,9 @@
           </div>
         </div>
       </section>
+
+
+      <!-- Абонементы -->
       <section class="subscriptions">
         <div class="container">
           <h2 class="subscriptions__title">Абонементы</h2>
@@ -249,6 +261,9 @@
           </div>
         </div>
       </section>
+
+
+      <!-- Промо -->
       <section class="promo">
         <div class="container">
           <div class="promo__wrapper">
@@ -282,6 +297,7 @@
           </div>
         </div>
       </section>
+
 
       <!-- Тренера -->
       <section class="trainers">

@@ -2423,18 +2423,18 @@ button,
   }
 }
 
-#player {
+.gym__video-init {
   width: 364px;
   height: 228px;
 }
 @media (max-width: 1199px) {
-  #player {
+  .gym__video-init {
     width: 266px;
     height: 167px;
   }
 }
 @media (max-width: 767px) {
-  #player {
+  .gym__video-init {
     width: 106%;
     height: 100%;
     margin-left: -15px;
@@ -2442,7 +2442,7 @@ button,
   }
 }
 @media (max-width: 536px) {
-  #player {
+  .gym__video-init {
     width: 111%;
   }
 }
@@ -3245,7 +3245,7 @@ button,
   .promo__image {
     min-width: 386px;
     min-height: 292px;
-    aspect-ratio: 1, 32/1;
+    aspect-ratio: 1.32/1;
     width: 54vw;
   }
 }
@@ -3414,7 +3414,7 @@ button,
 @media (max-width: 767px) {
   .card__image {
     min-width: 226px;
-    aspect-ratio: 1/1.212;
+    aspect-ratio: 1/1.21;
   }
 }
 
@@ -3482,7 +3482,6 @@ button,
 .card {
   padding: 27px 49px 23px;
   position: relative;
-  overflow: hidden;
   height: 294px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3499,7 +3498,7 @@ button,
           justify-content: flex-end;
   cursor: pointer;
   background-position-y: center;
-  overflow: scroll;
+  overflow: hidden;
   max-width: 260px;
 }
 @media (max-width: 1199px) {
@@ -3516,12 +3515,12 @@ button,
 @media (max-width: 767px) {
   .card {
     min-height: 274px;
-    aspect-ratio: 1/1.212;
+    aspect-ratio: 1/1.21;
     min-width: 226px;
     padding: 27px 35px 23px;
   }
 }
-.card:hover, .card:focus-within {
+.card:hover, .card:focus-within, .card:active {
   overflow: scroll;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -3530,7 +3529,7 @@ button,
   padding: 50px 46px 40px 47px;
 }
 @media (max-width: 1199px) {
-  .card:hover, .card:focus-within {
+  .card:hover, .card:focus-within, .card:active {
     padding-left: 41px;
     padding-top: 36px;
     -webkit-box-pack: center;
@@ -3539,19 +3538,19 @@ button,
   }
 }
 @media (max-width: 767px) {
-  .card:hover, .card:focus-within {
+  .card:hover, .card:focus-within, .card:active {
     padding: 34px 32px 33px 32px;
   }
 }
 @media (max-width: 1199px) {
-  .card:hover h3, .card:focus-within h3 {
+  .card:hover h3, .card:focus-within h3, .card:active h3 {
     margin-left: 0;
   }
 }
-.card:hover p, .card:focus-within p {
+.card:hover p, .card:focus-within p, .card:active p {
   display: block;
 }
-.card:hover .card__list, .card:focus-within .card__list {
+.card:hover .card__list, .card:focus-within .card__list, .card:active .card__list {
   display: block;
 }
 

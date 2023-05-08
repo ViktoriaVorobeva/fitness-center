@@ -54,6 +54,7 @@ const initSlider = () => {
         prevEl: '.trainers__slider-button--next',
       },
     });
+    slider.init();
   }
 };
 
