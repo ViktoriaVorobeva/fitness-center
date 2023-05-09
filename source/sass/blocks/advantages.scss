@@ -5,7 +5,7 @@
 
   @include vp-1199 {
     padding-top: 90px;
-    padding-bottom: 93px;
+    padding-bottom: 96px;
   }
 
   @include vp-767 {
@@ -86,7 +86,6 @@
   @include vp-1199 {
     min-height: 62px;
     align-items: center;
-    justify-self: flex-end;
   }
 
   @include vp-767 {
@@ -143,13 +142,13 @@
     }
   }
 
-  &--left {
+  &--right {
     @include vp-1199 {
-      justify-self: flex-start;
+      justify-content: flex-end;
     }
 
-    @include vp-767 {
-      justify-self: center;
+    @include vp-768 {
+      justify-content: flex-start;
     }
   }
 }
@@ -194,6 +193,7 @@
 
   @include vp-1199 {
     font-size: 58px;
+    margin-top: -18px;
   }
 
   @include vp-767 {
@@ -259,12 +259,6 @@
   }
 }
 
-.advantages__text-box br {
-  @include vp-767 {
-    display: none;
-  }
-}
-
 .advantages__text-box h3 {
   margin: 0;
   margin-bottom: 5px;
@@ -295,12 +289,4 @@
   font-weight: 400;
   color: $color-default-white;
   text-align: center;
-}
-
-.advantages__text-box--center br {
-  display: none;
-
-  @include vp-1199 {
-    display: block;
-  }
 }
