@@ -1,6 +1,7 @@
 import Swiper from '../vendor/swiper';
 
-const sliderElement = document.querySelector('.trainers__slider');
+const trainersSlider = document.querySelector('.trainers__slider');
+const reviewsSlider = document.querySelector('.reviews__slider');
 
 function addTabIndex() {
   const slideElements = document.querySelectorAll('.trainers__slide:not(.swiper-slide-duplicate)');
@@ -10,8 +11,8 @@ function addTabIndex() {
 }
 
 const initSlider = () => {
-  if (sliderElement) {
-    const slider = new Swiper(sliderElement, {
+  if (trainersSlider) {
+    const sliderTrainers = new Swiper(trainersSlider, {
       direction: 'horizontal',
       loop: true,
       slidesPerView: 1,
@@ -54,7 +55,22 @@ const initSlider = () => {
         prevEl: '.trainers__slider-button--next',
       },
     });
-    slider.init();
+    sliderTrainers.init();
+  }
+
+  if (reviewsSlider) {
+    const sliderReviews = new Swiper(reviewsSlider, {
+      direction: 'horizontal',
+      loop: false,
+      slidesPerView: 1,
+      autoHeight: true,
+
+      navigation: {
+        nextEl: '.reviews__slider-button--next',
+        prevEl: '.reviews__slider-button--prev',
+      },
+    });
+    sliderReviews.init();
   }
 };
 
