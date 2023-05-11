@@ -1,0 +1,56 @@
+.feedback {
+  position: relative;
+
+  @include vp-767 {
+    padding-top: 58px;
+    padding-bottom: 70px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    content: "";
+    background-color: $color-sapphire;
+    z-index: -1;
+
+    @include vp-1199 {
+      left: 0;
+      right: 0;
+      top: -5px;
+      width: 100%;
+      height: 324px;
+    }
+
+    @include vp-767 {
+      height: 386px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    height: 1px;
+    width: 50%;
+    content: "";
+    background-color: $color-light-slate-grey;
+
+    @include vp-1199 {
+      display: none;
+      background-color: $color-transparent;
+    }
+  }
+}
+
+.feedback .container {
+  max-width: 1342px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include vp-1199 {
+    grid-template-columns: 100%;
+  }
+}

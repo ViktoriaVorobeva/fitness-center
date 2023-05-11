@@ -1,0 +1,132 @@
+.contacts {
+  padding: 56px 30px 52px 120px;
+  max-width: 566px;
+
+  @include vp-1199 {
+    max-width: none;
+    min-width: 590px;
+    padding: 60px 30px 70px 88px;
+    width: 59vw;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    width: 100%;
+    min-width: 290px;
+  }
+}
+
+.contacts h2 {
+  margin: 0;
+  margin-bottom: 35px;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  font-family: $ff-placeholder;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 34px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  max-width: 404px;
+  grid-template-columns: repeat(2, minmax(90px, max-content));
+  row-gap: 17px;
+  column-gap: 120px;
+  position: relative;
+  padding-left: 4px;
+
+  &::after {
+    position: absolute;
+    top: 7px;
+    bottom: 7px;
+    width: 1px;
+    background-color: $color-light-slate-grey;
+    left: 58%;
+    content: "";
+
+    @include vp-1199 {
+      left: 26vw;
+    }
+
+    @include vp-1000 {
+      left: 56%;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  @include vp-1199 {
+    padding-left: 0;
+    max-width: none;
+    width: 100%;
+    min-width: 456px;
+    row-gap: 20px;
+    column-gap: 12.5vw;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 100%;
+  }
+}
+
+.contacts__group {
+  @include vp-767 {
+    &--phone {
+      grid-row: 3/4;
+    }
+
+    &--time {
+      grid-row: 2/3;
+    }
+  }
+}
+
+.contacts__group dt {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 5px;
+
+  @include vp-1199 {
+    font-size: 20px;
+  }
+}
+
+.contacts__group dd {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.contacts__link {
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

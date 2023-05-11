@@ -1,12 +1,12 @@
 .reviews {
-  padding-bottom: 121px;
+  padding-bottom: 120px;
 
   @include vp-1199 {
-    padding-bottom: 100px;
+    padding-bottom: 105px;
   }
 
   @include vp-767 {
-    padding-bottom: 70px;
+    padding-bottom: 75px;
   }
 }
 
@@ -40,7 +40,7 @@
     margin-bottom: 40px;
   }
 
-  @include vp-1199 {
+  @include vp-767 {
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 42px;

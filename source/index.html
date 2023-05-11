@@ -12,6 +12,8 @@
   <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" />
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" />
   <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" />
+  <link rel="preload" href="fonts/AlumniSans-Bold.woff2" as="font" />
+  <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" as="font" />
   <link rel="preload" href="fonts/rouble.woff2" as="font" />
 </head>
 
@@ -607,6 +609,61 @@
             </svg>
             <span class="visually-hidden">Следующий слайд</span>
           </button>
+        </div>
+      </section>
+
+
+      <!-- Контакты -->
+      <section class="feedback">
+        <div class="container">
+          <div class="feedback__form form" data-form-validate data-callback="base">
+            <h2>Бесплатное занятие</h2>
+            <form method="post" action="https://echo.htmlacademy.ru">
+              <fieldset class="form__field-wrapper">
+                <legend class="visually-hidden">Simple fieldset</legend>
+                <div class="form__field" data-validate-type="text" data-limitation="name" data-required
+                  data-message-base="Введите имя">
+                  <label>
+                    <input name="name" id="name" type="text" placeholder="Имя" autocomplete="off">
+                  </label>
+                </div>
+                <div class="form__field" data-validate-type="phone" data-on-input-validate data-required
+                  data-message-base="Введите номер телефона">
+                  <label>
+                    <input name="phone" id="phone" type="tel" placeholder="Телефон" autocomplete="off">
+                  </label>
+                </div>
+              </fieldset>
+              <button class="form__button" type="submit">Отправить</button>
+            </form>
+          </div>
+          <div class="feedback__contacts contacts">
+            <h2>Контакты</h2>
+            <dl class="contacts__list">
+              <div class="contacts__group">
+                <dt>Адрес:</dt>
+                <dd>г. Омск, ул. 60 лет Октября, 7</dd>
+              </div>
+              <div class="contacts__group contacts__group--phone">
+                <dt>Телефон:</dt>
+                <dd>
+                  <a class="contacts__link" href="tel:88005555555">8-800-555-55-55
+                  </a>
+                </dd>
+              </div>
+              <div class="contacts__group contacts__group--time">
+                <dt>График работы:</dt>
+                <dd>Пн-Вс: с 8:00 до 22:00</dd>
+              </div>
+              <div class="contacts__group">
+                <dt>Email:</dt>
+                <dd>
+                  <a class="contacts__link" href="malito:omsk@supergym.ru">omsk@supergym.ru
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </div>
         </div>
       </section>
     </main>
