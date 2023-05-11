@@ -1,11 +1,11 @@
 .header {
   padding-top: 30px;
-  padding-bottom: 94px;
+  padding-bottom: 89px;
   background-image: $conic-red-to-blue;
 
   @include vp-1199 {
     padding-top: 34px;
-    padding-bottom: 108px;
+    padding-bottom: 100px;
     background-image: $conic-red-to-blue-tablet;
   }
 
