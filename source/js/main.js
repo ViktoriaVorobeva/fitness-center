@@ -4,6 +4,7 @@ import {breakpointChecker} from './modules/breakpoints';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initSlider} from './modules/slider';
 import {getScroll} from './modules/scroll';
+import {playerInit} from './modules/video';
 
 // ---------------------------------
 
@@ -17,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
   breakpointChecker();
+  playerInit();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

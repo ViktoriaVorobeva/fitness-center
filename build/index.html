@@ -101,9 +101,13 @@
                 srcset="img/gym/gym@1x.webp 1x, img/gym/gym@2x.webp 2x" alt="Фотография зала.">
             </picture>
             <div class="gym__video">
-              <img class="gym__preview" width="364" height="228" src="img/gym/video.webp"
-                srcset="img/gym/video.webp 1x, img/gym/video@2x.webp 2x" alt="Постер видео про зал.">
-              <div class="gym__video-init" id="player"></div>
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/gym/video-phone@1x.webp 1x, img/gym/video-phone@2x.webp 2x">
+                <source media="(max-width: 1199px)" srcset="img/gym/video-tablet@1x.webp 1x, img/gym/video-tablet@2x.webp 2x">
+                <img class="gym__preview" src="img/gym/video@1x.webp" width="364" height="228"
+                  srcset="img/gym/video@1x.webp 1x, img/gym/video@2x.webp 2x" alt="Тренажерный зал с множеством тренажеров.">
+              </picture>
+              <div class="gym__video-init" id="player" data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1"></div>
               <button class="gym__button" type="button">
                 <source media="(max-width: 1199px)"
                   srcset="img/gym/play-tablet.webp 1x, img/gym/play-tablet@2x.webp 2x">
@@ -752,39 +756,6 @@
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
-  <script src="https://www.youtube.com/iframe_api"></script>
-  <script async>
-    let player;
-
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        videoId: '9TZXsZItgdw',
-        controls: 0,
-        events: {
-          'onStateChange': onPlayerStateChange
-        }
-      });
-    }
-
-    function onPlayerStateChange(evt) {
-      if (evt.data == YT.PlayerState.ENDED) {
-        startButton.classList.remove('visually-hidden');
-        preview.classList.remove('visually-hidden');
-      }
-    }
-
-    const startButton = document.querySelector('.gym__button');
-    const preview = document.querySelector('.gym__preview');
-
-    function getStartVideo() {
-      startButton.classList.add('visually-hidden');
-      preview.classList.add('visually-hidden');
-      player.playVideo();
-    }
-
-    startButton.addEventListener('click', getStartVideo);
-
-  </script>
 </body>
 
 </html>
