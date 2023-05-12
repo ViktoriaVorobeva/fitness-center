@@ -93,6 +93,7 @@
     flex-direction: column;
     justify-content: center;
     min-height: 142px;
+
     &:not(:last-of-type) {
       margin-bottom: 46px;
     }
@@ -185,7 +186,6 @@
   font-size: 71px;
   line-height: 150%;
   background-image: $red-to-blue-right-bottom-low;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   display: block;

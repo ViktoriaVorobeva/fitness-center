@@ -1,9 +1,6 @@
 .product {
   background-color: $color-default-white;
   z-index: 2;
-}
-
-.product__link {
   padding: 68px 60px;
   width: 100%;
   display: flex;
@@ -11,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  cursor: pointer;
 
   &:focus-visible {
     outline: none;
@@ -23,7 +21,7 @@
       position: absolute;
       content: "";
       top: 5px;
-      bottom: 7px;
+      bottom: 1px;
       left: 0;
       right: 0;
       z-index: -1;
@@ -52,7 +50,7 @@
   }
 }
 
-.product__title {
+.product h3 {
   margin: 0;
   font-weight: 700;
   font-size: 26px;
@@ -66,7 +64,7 @@
   }
 }
 
-.product__description {
+.product p {
   margin: 0;
   font-size: 16px;
   line-height: 150%;
@@ -88,14 +86,14 @@
   }
 }
 
-.product__price {
+.product__price-box p {
   margin: 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 150%;
   color: $color-egyptian-blue;
 
-  &:not(:last-child) {
+  &:not(:last-of-type) {
     margin-right: 11px;
 
     @include vp-767 {
@@ -103,28 +101,29 @@
     }
   }
 
-  &--rouble {
+  &:not(:first-of-type) {
     color: $color-sapphire;
   }
 
   @include vp-767 {
     font-size: 48px;
   }
+}
 
-  &--shadow {
-    font-size: 100px;
-    line-height: 150%;
-    opacity: 0.48;
-    color: $color-whisper;
-    position: absolute;
-    top: -53px;
-    left: -15px;
-    z-index: -1;
+.product__price-box span {
+  font-size: 100px;
+  line-height: 150%;
+  opacity: 0.48;
+  font-weight: 700;
+  color: $color-whisper;
+  position: absolute;
+  top: -53px;
+  left: -15px;
+  z-index: -1;
 
-    @include vp-767 {
-      font-size: 80px;
-      top: -45px;
-    }
+  @include vp-767 {
+    font-size: 80px;
+    top: -45px;
   }
 }
 
@@ -137,7 +136,7 @@
   width: 100%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 27px 42px;
+  padding: 24px 42px;
   color: $color-sapphire;
   border: 2px solid $color-sapphire;
   user-select: none;
@@ -145,7 +144,7 @@
   &:hover,
   &:focus {
     border: none;
-    padding: 29px 44px;
+    padding: 26px 44px;
     background-image: $red-to-blue-right;
     color: $color-default-white;
 

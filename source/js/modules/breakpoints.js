@@ -1,11 +1,11 @@
 const breakpoint = window.matchMedia('(max-width:1199px)');
-const gymDescription = document.querySelector('.gym__description--desktop');
+const gymDescriptions = document.querySelectorAll('.gym p:not(:first-of-type)');
 
 const breakpointChecker = () => {
-  if (gymDescription && breakpoint.matches) {
-    gymDescription.classList.add('visually-hidden');
+  if (gymDescriptions && breakpoint.matches) {
+    gymDescriptions.forEach((description) => description.classList.add('visually-hidden'));
   } else {
-    gymDescription.classList.remove('visually-hidden');
+    gymDescriptions.forEach((description) => description.classList.remove('visually-hidden'));
   }
 };
 breakpoint.addListener(breakpointChecker);

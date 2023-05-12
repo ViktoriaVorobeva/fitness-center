@@ -133,6 +133,8 @@
   margin-top: auto;
   width: fit-content;
   position: relative;
+  user-select: none;
+  cursor: pointer;
 
   &::after {
     position: absolute;
@@ -159,6 +161,7 @@
   height: 100%;
   aspect-ratio: 1/1.65;
   align-self: stretch;
+  background-color: $color-egyptian-blue;
 
   @include vp-1199 {
     min-width: 399px;
@@ -250,7 +253,7 @@
   }
 }
 
-.promotions__item:nth-child(2n - 1) p{
+.promotions__item:nth-child(2n - 1) p {
   @include vp-1199 {
     width: 29vw;
   }
@@ -272,6 +275,8 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   position: relative;
+  user-select: none;
+  cursor: pointer;
 
   &::after {
     position: absolute;

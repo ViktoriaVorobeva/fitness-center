@@ -120,6 +120,8 @@
 }
 
 .contacts__link {
+  user-select: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {

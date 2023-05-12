@@ -13,13 +13,13 @@ const createIframe = (block) => {
 const playerInit = () => {
   if (videoContainer) {
     const startButton = document.querySelector('.gym__button');
-    const preview = document.querySelector('.gym__preview');
+    const previewImage = document.querySelector('.gym__preview');
 
     startButton.addEventListener('click', () => {
       const iframeVideo = createIframe(videoContainer);
       videoContainer.append(iframeVideo);
       startButton.classList.add('visually-hidden');
-      preview.classList.add('visually-hidden');
+      previewImage.classList.add('visually-hidden');
     });
   }
 };

@@ -1,11 +1,11 @@
 .header {
   padding-top: 30px;
-  padding-bottom: 89px;
+  padding-bottom: 95px;
   background-image: $conic-red-to-blue;
 
   @include vp-1199 {
     padding-top: 34px;
-    padding-bottom: 100px;
+    padding-bottom: 104px;
     background-image: $conic-red-to-blue-tablet;
   }
 
@@ -20,16 +20,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 80px;
+  margin-bottom: 88px;
 
   @include vp-1199 {
     margin-bottom: 76px;
-    align-items: baseline;
+    align-items: center;
   }
 
   @include vp-767 {
-    align-items: center;
-    margin-bottom: 63px;
+    margin-bottom: 70px;
   }
 }
 
@@ -43,6 +42,14 @@
     width: 69px;
     height: 24px;
   }
+}
+
+.header__link-box {
+  max-width: 170px;
+  align-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .header__link {

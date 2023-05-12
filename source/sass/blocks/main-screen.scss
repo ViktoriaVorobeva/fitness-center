@@ -58,7 +58,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
   align-items: flex-end;
 
   @include vp-1199 {
@@ -70,7 +70,7 @@
   }
 }
 
-.main-screen__title-text {
+.main-screen p {
   display: block;
   margin: 0;
   margin-bottom: 15px;
@@ -96,7 +96,7 @@
   }
 }
 
-.main-screen__title {
+.main-screen h1 {
   margin: 0;
   font-family: $ff-placeholder;
   font-weight: 600;
@@ -106,6 +106,7 @@
   color: $color-default-white;
   text-align: right;
   text-transform: uppercase;
+  -webkit-text-stroke: 4px;
 
   @include vp-1199 {
     font-size: 72px;
@@ -116,8 +117,9 @@
 
 .main-screen__image {
   position: absolute;
-  top: -109px;
+  top: -111px;
   left: 40%;
+  background-color: $color-sapphire;
 
   @include vp-1199 {
     width: 324px;
@@ -134,10 +136,11 @@
 
 .main-screen__button {
   max-width: 230px;
+  user-select: none;
 
   @include vp-1199 {
     width: 24vw;
-    padding: 17px 28px;
+    padding: 15px 28px;
     font-size: 14px;
     letter-spacing: 0.03em;
   }

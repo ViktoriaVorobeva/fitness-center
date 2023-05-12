@@ -43,7 +43,7 @@
   }
 }
 
-.gym__title {
+.gym h2 {
   margin: 0;
   font-family: $ff-placeholder;
   font-weight: 600;
@@ -68,7 +68,7 @@
   }
 }
 
-.gym__text {
+.gym small {
   margin: 0;
   font-size: 18px;
   line-height: 150%;
@@ -83,7 +83,7 @@
   }
 }
 
-.gym__description {
+.gym p {
   margin: 0;
   font-weight: 300;
   font-size: 16px;
@@ -103,6 +103,8 @@
 }
 
 .gym__image {
+  background-color: $color-whisper;
+
   @include vp-1199 {
     aspect-ratio: 1.97/1;
     width: 100vw;
