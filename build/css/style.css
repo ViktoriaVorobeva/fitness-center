@@ -2742,7 +2742,7 @@ button,
 }
 @media (max-width: 767px) {
   .tabs__control:not(:last-child) {
-    margin-right: 31px;
+    margin-right: 46px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -2753,7 +2753,7 @@ button,
 }
 @media screen and (max-width: 767px) {
   .tabs__control {
-    padding: 10px 5px;
+    padding: 10px 0;
     font-size: 16px;
   }
 }
@@ -2770,6 +2770,12 @@ button,
   height: 2px;
   content: "";
   background-color: #d10a42;
+}
+@media (max-width: 767px) {
+  .tabs__control.is-active::after {
+    left: 0;
+    width: 114%;
+  }
 }
 
 .tabs__content {
@@ -5060,12 +5066,13 @@ button,
 
 .footer {
   padding-top: 42px;
-  padding-bottom: 27px;
+  padding-bottom: 32px;
   background-color: #030a1a;
 }
 @media (max-width: 1199px) {
   .footer {
     padding-top: 41px;
+    padding-bottom: 38px;
   }
 }
 @media (max-width: 767px) {
