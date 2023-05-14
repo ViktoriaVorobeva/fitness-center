@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import {breakpointChecker} from './modules/breakpoints';
+import {checkBreakpoints} from './modules/breakpoints';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initSlider} from './modules/slider';
 import {getScroll} from './modules/scroll';
@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
-  breakpointChecker();
+  checkBreakpoints();
   playerInit();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

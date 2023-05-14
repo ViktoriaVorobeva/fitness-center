@@ -8,7 +8,9 @@ const getScroll = () => {
         evt.preventDefault();
         const id = link.getAttribute('href');
         const target = document.querySelector(id);
-        target.scrollIntoView({behavior: 'smooth'});
+        if (target) {
+          target.scrollIntoView({behavior: 'smooth'});
+        }
       });
     });
   }
@@ -18,7 +20,9 @@ const getScroll = () => {
       evt.preventDefault();
       const id = buttonPromotions.getAttribute('href');
       const target = document.querySelector(id);
-      target.scrollIntoView({behavior: 'smooth'});
+      if (target) {
+        target.scrollIntoView({behavior: 'smooth'});
+      }
     });
   }
 };

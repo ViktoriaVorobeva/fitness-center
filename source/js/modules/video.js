@@ -19,7 +19,9 @@ const playerInit = () => {
       const iframeVideo = createIframe(videoContainer);
       videoContainer.append(iframeVideo);
       startButton.classList.add('visually-hidden');
-      previewImage.classList.add('visually-hidden');
+      if (previewImage) {
+        previewImage.classList.add('visually-hidden');
+      }
     });
   }
 };

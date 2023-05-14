@@ -51,8 +51,8 @@ const initSlider = () => {
       },
 
       navigation: {
-        nextEl: '.trainers__slider-button--prev',
-        prevEl: '.trainers__slider-button--next',
+        nextEl: '.trainers__button--prev',
+        prevEl: '.trainers__button--next',
       },
     });
     sliderTrainers.init();
@@ -66,8 +66,8 @@ const initSlider = () => {
       autoHeight: true,
 
       navigation: {
-        nextEl: '.reviews__slider-button--next',
-        prevEl: '.reviews__slider-button--prev',
+        nextEl: '.reviews__button--next',
+        prevEl: '.reviews__button--prev',
       },
     });
     sliderReviews.init();
