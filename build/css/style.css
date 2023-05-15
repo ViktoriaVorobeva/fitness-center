@@ -2895,9 +2895,8 @@ button,
   right: 0;
   z-index: -1;
   border: 7px solid transparent;
-  -o-border-image: -o-linear-gradient(top, #d10a42 0%, #00359f 100%);
-     border-image: -webkit-gradient(linear, left top, left bottom, from(#d10a42), to(#00359f));
-     border-image: linear-gradient(180deg, #d10a42 0%, #00359f 100%);
+  -o-border-image: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%);
+     border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
 }
 @media (max-width: 1199px) {
@@ -4265,9 +4264,8 @@ button,
   right: 0;
   z-index: -1;
   border: 7px solid transparent;
-  -o-border-image: -o-linear-gradient(top, #d10a42 0%, #00359f 100%);
-     border-image: -webkit-gradient(linear, left top, left bottom, from(#d10a42), to(#00359f));
-     border-image: linear-gradient(180deg, #d10a42 0%, #00359f 100%);
+  -o-border-image: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%);
+     border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
 }
 @media (max-width: 1199px) {
