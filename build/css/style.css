@@ -2863,7 +2863,7 @@ button,
   opacity: 1;
 }
 
-.product {
+.product__link {
   background-color: #ffffff;
   z-index: 2;
   padding: 68px 60px;
@@ -2883,10 +2883,10 @@ button,
   position: relative;
   cursor: pointer;
 }
-.product:focus-visible {
+.product__link:focus-visible {
   outline: none;
 }
-.product:hover::after, .product:focus-within::after, .product:active::after {
+.product__link:hover::after, .product__link:focus-within::after, .product__link:active::after {
   position: absolute;
   content: "";
   top: 5px;
@@ -2901,24 +2901,24 @@ button,
   border-image-slice: 1;
 }
 @media (max-width: 1199px) {
-  .product:hover::after, .product:focus-within::after, .product:active::after {
+  .product__link:hover::after, .product__link:focus-within::after, .product__link:active::after {
     top: 1px;
     bottom: -3px;
   }
 }
 @media (max-width: 767px) {
-  .product:hover::after, .product:focus-within::after, .product:active::after {
+  .product__link:hover::after, .product__link:focus-within::after, .product__link:active::after {
     top: -1px;
     bottom: 0;
   }
 }
 @media (max-width: 1199px) {
-  .product {
+  .product__link {
     padding: 64px 60px 65px;
   }
 }
 @media (max-width: 767px) {
-  .product {
+  .product__link {
     padding: 51px 42px 54px;
   }
 }
@@ -3006,7 +3006,7 @@ button,
   }
 }
 
-.product__link-button {
+.product__button {
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
@@ -3025,7 +3025,7 @@ button,
       -ms-user-select: none;
           user-select: none;
 }
-.product__link-button:hover, .product__link-button:focus {
+.product__button:hover, .product__button:focus {
   border: none;
   padding: 26px 44px;
   background-image: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -3033,12 +3033,12 @@ button,
   color: #ffffff;
 }
 @media (max-width: 1199px) {
-  .product__link-button:hover, .product__link-button:focus {
+  .product__button:hover, .product__button:focus {
     padding: 26px 44px;
   }
 }
 @media (max-width: 1199px) {
-  .product__link-button {
+  .product__button {
     padding: 24px 42px;
   }
 }

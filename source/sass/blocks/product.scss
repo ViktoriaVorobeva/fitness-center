@@ -1,4 +1,4 @@
-.product {
+.product__link {
   background-color: $color-default-white;
   z-index: 2;
   padding: 68px 60px;
@@ -127,7 +127,7 @@
   }
 }
 
-.product__link-button {
+.product__button {
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
