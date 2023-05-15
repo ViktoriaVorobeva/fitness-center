@@ -3024,6 +3024,7 @@ button,
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  background-color: #ffffff;
 }
 .product__button:hover, .product__button:focus {
   border: none;
