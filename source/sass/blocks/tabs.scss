@@ -43,7 +43,6 @@
 .tabs__control {
   position: relative;
   cursor: pointer;
-  opacity: 0.5;
   min-width: auto;
   justify-content: center;
   border: none;
@@ -52,6 +51,8 @@
   font-size: 20px;
   line-height: 150%;
   user-select: none;
+  font-family: $ff-main;
+  color: $color-sapphire-light;
 
   &:hover,
   &:focus {
@@ -83,6 +84,7 @@
   &.is-active {
     opacity: 1;
     pointer-events: none;
+    color: $color-sapphire;
 
     &::after {
       position: absolute;

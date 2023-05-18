@@ -26,6 +26,7 @@
 
 .footer__nav {
   max-width: 900px;
+  width: 100%;
 
   @include vp-1199 {
     max-width: 72vw;

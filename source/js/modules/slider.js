@@ -51,8 +51,8 @@ const initSlider = () => {
       },
 
       navigation: {
-        nextEl: '.trainers__button--prev',
-        prevEl: '.trainers__button--next',
+        nextEl: '.trainers__button--next',
+        prevEl: '.trainers__button--prev',
       },
     });
     sliderTrainers.init();
@@ -63,7 +63,7 @@ const initSlider = () => {
       direction: 'horizontal',
       loop: false,
       slidesPerView: 1,
-      autoHeight: true,
+      spaceBetween: 60,
 
       navigation: {
         nextEl: '.reviews__button--next',

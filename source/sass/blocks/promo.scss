@@ -49,9 +49,9 @@
   @include vp-767 {
     min-width: 290px;
     padding: 41px 44px 46px 45px;
-    aspect-ratio: 1/1.01;
     width: 100%;
     max-width: none;
+    aspect-ratio: auto;
   }
 }
 
@@ -63,6 +63,8 @@
 
   @include vp-1199 {
     margin-bottom: -1px;
+    width: 100%;
+    justify-content: space-between;
   }
 }
 
@@ -202,6 +204,8 @@
     font-size: 10px;
     line-height: 12px;
     padding: 11px 48px;
+    width: 100%;
+    justify-content: center;
   }
 }
 
@@ -211,11 +215,14 @@
 
 .promo__image {
   background-color: $color-sapphire;
+  object-fit: cover;
+  aspect-ratio: 1.32/1;
+  width: 100%;
+  height: 100%;
 
   @include vp-1199 {
     min-width: 386px;
     min-height: 292px;
-    aspect-ratio: 1.32/1;
     width: 54vw;
   }
 

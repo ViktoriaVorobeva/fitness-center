@@ -16,11 +16,11 @@
 .gym__box {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   position: relative;
 
   @include vp-1199 {
     flex-direction: column;
+    align-items: center;
   }
 }
 

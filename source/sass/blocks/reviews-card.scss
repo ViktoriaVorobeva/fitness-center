@@ -1,5 +1,6 @@
 .reviews-card {
-  height: 242px;
+  min-height: 242px;
+  height: 100%;
   max-width: 560px;
   padding: 62px;
   box-sizing: border-box;
@@ -17,7 +18,6 @@
 
   @include vp-767 {
     padding: 40px 25px 34px;
-    min-height: 335px;
     height: 100%;
   }
 }
@@ -37,8 +37,6 @@
   @include vp-767 {
     min-width: 68px;
     min-height: 68px;
-    aspect-ratio: 1/1;
-    width: 21vw;
     height: auto;
   }
 }
@@ -88,10 +86,10 @@
   @include vp-767 {
     text-align: center;
     display: block;
-    margin-top: auto;
+    margin-top: 44px;
   }
 
-  @include vp-374 {
-    margin-top: 0;
+  @include vp-411 {
+    margin-top: 34px;
   }
 }
