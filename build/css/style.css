@@ -2370,6 +2370,7 @@ button,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 38px;
   }
 }
 @media (max-width: 767px) {
@@ -2377,6 +2378,7 @@ button,
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-bottom: 28px;
   }
 }
 
@@ -2397,6 +2399,7 @@ button,
     margin-bottom: 0;
     display: block;
     margin-left: -15px;
+    margin-top: 0;
   }
 }
 @media (max-width: 767px) {
@@ -3377,7 +3380,7 @@ button,
     font-size: 42px;
     line-height: 50px;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 31px;
   }
 }
 @media (max-width: 767px) {
@@ -3599,6 +3602,7 @@ button,
     width: 100%;
     min-height: 294px;
     min-width: 268px;
+    height: auto;
     max-width: none;
     aspect-ratio: 1/1.1;
   }
@@ -3623,7 +3627,10 @@ button,
 @media (max-width: 1199px) {
   .card:hover .card__box, .card:focus-within .card__box, .card:active .card__box {
     padding-left: 41px;
-    padding-top: 36px;
+    padding-top: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 767px) {
@@ -4023,7 +4030,7 @@ button,
 @media (max-width: 1199px) {
   .promotions {
     padding-top: 91px;
-    padding-bottom: 94px;
+    padding-bottom: 92px;
   }
 }
 @media (max-width: 767px) {
@@ -4056,7 +4063,7 @@ button,
     font-size: 32px;
     line-height: 38px;
     margin-left: -5px;
-    margin-bottom: 42px;
+    margin-bottom: 44px;
   }
 }
 
@@ -4213,7 +4220,7 @@ button,
 }
 @media (max-width: 767px) {
   .promotions__poster-link {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 
@@ -4390,12 +4397,15 @@ button,
 }
 @media (max-width: 1199px) {
   .promotions__item-link {
-    margin-top: 57px;
+    margin-top: 46px;
+  }
+  .promotions__item-link--margin {
+    margin-top: 68px;
   }
 }
 @media (max-width: 767px) {
   .promotions__item-link {
-    margin-bottom: 35px;
+    margin-top: 24px;
   }
 }
 
@@ -4516,6 +4526,11 @@ button,
   .reviews__button {
     width: 30px;
     height: 39px;
+    top: 50%;
+  }
+}
+@media (max-width: 411px) {
+  .reviews__button {
     top: 60%;
   }
 }
@@ -4601,7 +4616,7 @@ button,
 @media (max-width: 1199px) {
   .reviews-card {
     max-width: 100%;
-    padding: 62px 65px;
+    padding: 62px 65px 57px;
   }
 }
 @media (max-width: 767px) {
@@ -4625,9 +4640,8 @@ button,
 }
 @media (max-width: 767px) {
   .reviews-card__image {
-    min-width: 68px;
-    min-height: 68px;
-    height: auto;
+    width: 68px;
+    height: 68px;
   }
 }
 
@@ -4673,7 +4687,12 @@ button,
         align-self: flex-end;
     width: 44%;
     margin-top: 9px;
-    margin-bottom: 21px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 411px) {
+  .reviews-card__text-box h3 {
+    margin-bottom: -13px;
   }
 }
 
@@ -4957,7 +4976,7 @@ button,
   .contacts {
     max-width: none;
     min-width: 590px;
-    padding: 60px 30px 63px 88px;
+    padding: 60px 30px 62px 88px;
     width: 59vw;
   }
 }
@@ -5183,7 +5202,7 @@ button,
 }
 @media (max-width: 1199px) {
   .navigation {
-    padding-left: 21%;
+    padding-left: 24%;
   }
 }
 @media (max-width: 767px) {
@@ -5204,7 +5223,7 @@ button,
 }
 @media (max-width: 1199px) {
   .navigation__item:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 11px;
   }
 }
 @media (max-width: 767px) {

@@ -14,7 +14,7 @@
 
   @include vp-1199 {
     max-width: 100%;
-    padding: 62px 65px;
+    padding: 62px 65px 57px;
   }
 
   @include vp-767 {
@@ -36,9 +36,8 @@
   background-color: $color-light-slate-grey;
 
   @include vp-767 {
-    min-width: 68px;
-    min-height: 68px;
-    height: auto;
+    width: 68px;
+    height: 68px;
   }
 }
 
@@ -74,7 +73,11 @@
     align-self: flex-end;
     width: 44%;
     margin-top: 9px;
-    margin-bottom: 21px;
+    margin-bottom: 10px;
+  }
+
+  @include vp-411 {
+    margin-bottom: -13px;
   }
 }
 
