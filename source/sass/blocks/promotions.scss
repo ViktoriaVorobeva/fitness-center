@@ -1,6 +1,6 @@
 .promotions {
   padding-top: 100px;
-  padding-bottom: 117px;
+  padding-bottom: 114px;
 
   @include vp-1199 {
     padding-top: 91px;
@@ -111,7 +111,6 @@
 
 .promotions__poster p {
   margin: 0;
-  margin-bottom: 35px;
   font-size: 18px;
   line-height: 140%;
   color: $color-default-white;
@@ -130,7 +129,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-default-white;
-  margin-top: 198px;
+  margin-top: 190px;
   width: fit-content;
   position: relative;
   user-select: none;
@@ -268,7 +267,7 @@
 
 .promotions__item-link {
   color: $color-resolution-blue;
-  margin-top: 80px;
+  margin-top: 71px;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;

@@ -2387,7 +2387,8 @@ button,
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
+  margin-top: 38px;
+  margin-bottom: 5px;
 }
 @media (max-width: 1199px) {
   .gym h2 {
@@ -2429,6 +2430,9 @@ button,
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
+}
+.gym p:not(:last-of-type) {
+  margin-bottom: 5px;
 }
 @media (max-width: 1199px) {
   .gym p {
@@ -3471,11 +3475,9 @@ button,
   -o-object-fit: cover;
      object-fit: cover;
   background-color: #b6bdcc;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
   z-index: -1;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
 }
 @media (max-width: 1199px) {
   .card__image {
@@ -3551,16 +3553,13 @@ button,
   margin-bottom: 13px;
 }
 
-.card {
+.card__box {
   padding: 27px 49px 23px;
-  position: relative;
-  height: 294px;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -3568,6 +3567,28 @@ button,
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1199px) {
+  .card__box {
+    padding-bottom: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .card__box {
+    padding: 27px 35px 23px;
+  }
+}
+
+.card {
+  position: relative;
+  height: 294px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
   cursor: pointer;
   background-position-y: center;
   overflow: hidden;
@@ -3575,9 +3596,7 @@ button,
 }
 @media (max-width: 1199px) {
   .card {
-    padding-bottom: 26px;
     width: 100%;
-    height: auto;
     min-height: 294px;
     min-width: 268px;
     max-width: none;
@@ -3589,28 +3608,26 @@ button,
     min-height: 274px;
     aspect-ratio: 1/1.21;
     min-width: 226px;
-    padding: 27px 35px 23px;
   }
 }
 .card:hover, .card:focus-within, .card:active {
   overflow: scroll;
+  background-color: rgba(16, 38, 84, 0.89);
+}
+.card:hover .card__box, .card:focus-within .card__box, .card:active .card__box {
+  padding: 50px 46px 40px 47px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  background-color: rgba(16, 38, 84, 0.89);
-  padding: 50px 46px 40px 47px;
 }
 @media (max-width: 1199px) {
-  .card:hover, .card:focus-within, .card:active {
+  .card:hover .card__box, .card:focus-within .card__box, .card:active .card__box {
     padding-left: 41px;
     padding-top: 36px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 @media (max-width: 767px) {
-  .card:hover, .card:focus-within, .card:active {
+  .card:hover .card__box, .card:focus-within .card__box, .card:active .card__box {
     padding: 34px 32px 33px 32px;
   }
 }
@@ -4001,7 +4018,7 @@ button,
 
 .promotions {
   padding-top: 100px;
-  padding-bottom: 117px;
+  padding-bottom: 114px;
 }
 @media (max-width: 1199px) {
   .promotions {
@@ -4145,7 +4162,6 @@ button,
 
 .promotions__poster p {
   margin: 0;
-  margin-bottom: 35px;
   font-size: 18px;
   line-height: 140%;
   color: #ffffff;
@@ -4169,7 +4185,7 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 198px;
+  margin-top: 190px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -4335,7 +4351,7 @@ button,
 
 .promotions__item-link {
   color: #1c3374;
-  margin-top: 80px;
+  margin-top: 71px;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
@@ -4566,6 +4582,7 @@ button,
   height: 100%;
   max-width: 560px;
   padding: 62px;
+  padding-bottom: 57px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -5159,7 +5176,7 @@ button,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
-  padding-left: 32%;
+  padding-left: 39.5%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -5183,7 +5200,7 @@ button,
 }
 
 .navigation__item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 21px;
 }
 @media (max-width: 1199px) {
   .navigation__item:not(:last-child) {

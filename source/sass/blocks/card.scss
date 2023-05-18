@@ -3,11 +3,9 @@
   height: 100%;
   object-fit: cover;
   background-color: $color-spindle;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
   z-index: -1;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
 
   @include vp-1199 {
     min-width: 268px;
@@ -77,23 +75,36 @@
   }
 }
 
-.card {
+.card__box {
   padding: 27px 49px 23px;
-  position: relative;
-  height: 294px;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
+
+  @include vp-1199 {
+    padding-bottom: 26px;
+  }
+
+  @include vp-767 {
+    padding: 27px 35px 23px;
+  }
+}
+
+.card {
+  position: relative;
+  height: 294px;
+  display: grid;
+  grid-template-columns: 1fr;
   cursor: pointer;
   background-position-y: center;
   overflow: hidden;
   max-width: 260px;
 
   @include vp-1199 {
-    padding-bottom: 26px;
     width: 100%;
-    height: auto;
     min-height: 294px;
     min-width: 268px;
     max-width: none;
@@ -104,25 +115,26 @@
     min-height: 274px;
     aspect-ratio: 1/1.21;
     min-width: 226px;
-    padding: 27px 35px 23px;
   }
 
   &:hover,
   &:focus-within,
   &:active {
     overflow: scroll;
-    justify-content: flex-start;
     background-color: $color-sapphire-dark;
-    padding: 50px 46px 40px 47px;
 
-    @include vp-1199 {
-      padding-left: 41px;
-      padding-top: 36px;
-      justify-content: center;
-    }
+    .card__box {
+      padding: 50px 46px 40px 47px;
+      justify-content: flex-start;
 
-    @include vp-767 {
-      padding: 34px 32px 33px 32px;
+      @include vp-1199 {
+        padding-left: 41px;
+        padding-top: 36px;
+      }
+
+      @include vp-767 {
+        padding: 34px 32px 33px 32px;
+      }
     }
 
     h3 {
